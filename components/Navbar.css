@@ -1,0 +1,139 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@keyframes showMenu {
+  from {
+    transform: translateX(-1200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-family: "Poppins";
+  overflow: hidden;
+  z-index: 99;
+  transition: all 0.2s;
+}
+
+.navbar-scrolled {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.signin {
+  float: right;
+  margin-top: -25px;
+  margin-right: 20px;
+}
+
+.signin a {
+  color: white;
+  text-decoration: none;
+}
+
+.links {
+  margin-top: 18px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  text-align: center !important;
+}
+
+.links a {
+  padding: 25px 20px;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box;
+}
+
+.links a:hover {
+  box-shadow: inset 0px -10px 0px white;
+}
+
+.active {
+  box-shadow: inset 0px -10px 0px white;
+}
+
+.phone-bars {
+  float: right;
+}
+
+.phone-bars svg {
+  font-size: 30px;
+  color: white;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.menu {
+  min-height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  animation: showMenu 0.5s;
+}
+
+.menu-items {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-items a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.signin-btn {
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 22px !important;
+  padding: 10px 20px;
+  color: white;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+
+.menu-items a:hover {
+  text-decoration: underline;
+}
+
+.signin-btn:hover {
+  text-decoration: none !important;
+  background-color: white;
+  color: black;
+}

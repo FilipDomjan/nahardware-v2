@@ -1,0 +1,67 @@
+.sponsors {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+.sponsors img {
+  width: 100px;
+}
+
+.sponsors h1 {
+  font-size: 40px;
+  color: rgb(32, 32, 32);
+}
+
+.sponsors p {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.sponsor-list {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.sponsor-item {
+  display: inline-block;
+  width: 20%;
+  height: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 10px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.sponsor-item img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sponsor-filter {
+  filter: invert(50%) sepia(0%) saturate(1954%) hue-rotate(177deg)
+    brightness(108%) contrast(84%);
+  transition: all 0.3s;
+}
+
+.sponsor-filter-arctic {
+  filter: invert(50%) sepia(0%) saturate(1954%) hue-rotate(177deg)
+    brightness(108%) contrast(84%);
+  transition: all 0.3s;
+}
+
+.sponsor-item:hover .sponsor-filter {
+  filter: none;
+}
+
+.sponsor-item:hover .sponsor-filter-arctic {
+  filter: invert(80%) sepia(46%) saturate(863%) hue-rotate(162deg)
+    brightness(96%) contrast(101%);
+}

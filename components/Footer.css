@@ -1,0 +1,113 @@
+.footer {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  position: relative;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 150px;
+  max-height: 150px;
+  padding: 10px 30px 10px 0px;
+  text-align: left;
+}
+
+.column h3 {
+  font-size: 20px;
+  color: #8a8a8a;
+}
+
+.column a {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+  font-size: 17px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s;
+}
+
+.column a:hover {
+  color: rgb(255, 42, 42);
+}
+
+.footer-content {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.footer-content hr {
+  border: 1px solid rgb(63, 63, 63);
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.footer-content p {
+  width: 600px;
+  padding: 10px 0px 20px 0px;
+  margin: 0;
+}
+
+.back-to-top {
+  float: right;
+  padding-right: 0px;
+  padding-top: 30px;
+}
+
+.back-to-top a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+.back-to-top a svg {
+  padding-right: 5px;
+  position: relative;
+  bottom: 0;
+  transition: all 0.2s;
+  color: white;
+}
+
+.back-to-top a:hover {
+  color: rgb(255, 42, 42);
+}
+
+.back-to-top a:hover svg {
+  color: rgb(255, 42, 42);
+  bottom: 3px;
+}
+
+.back-to-top::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .column {
+    display: block;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .footer-content p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .back-to-top {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 770px) {
+  .back-to-top {
+    padding-right: 30px;
+  }
+}

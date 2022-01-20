@@ -1,0 +1,97 @@
+@media (max-width: 1500px) {
+  .contact-information {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .contact-form {
+    width: 500px;
+  }
+
+  .contact-information {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-form {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .row-content {
+    grid-gap: 10px;
+  }
+
+  .row-content input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .row textarea {
+    box-sizing: border-box;
+  }
+
+  .contact-information {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 60px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .contact-form h1 {
+    font-weight: 400;
+  }
+
+  .row-content {
+    display: block;
+  }
+
+  .row-content input {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .row {
+    margin-bottom: 0px;
+  }
+
+  .row textarea {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  #submit {
+    width: 100%;
+    height: 45px;
+  }
+
+  .contact-information {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .contact-information h1 {
+    width: 100%;
+    font-weight: 400;
+  }
+}
