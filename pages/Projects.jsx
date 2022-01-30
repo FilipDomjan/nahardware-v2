@@ -10,7 +10,7 @@ function Projects(){
     return(
         <>
             <Helmet>
-                <title>NorthAmerican Hardware | Our Projects</title>
+                <title>Projects | NorthAmerican Hardware</title>
             </Helmet>
             <ProjectsHero />
             <Images />

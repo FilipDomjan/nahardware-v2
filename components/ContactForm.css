@@ -1,6 +1,7 @@
 .contact {
-  min-height: 100vh;
   width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
 }
 
 .contact-form {
@@ -11,14 +12,14 @@
 
 .contact-form h1 {
   font-size: 30px;
-  color: rgb(255, 55, 55);
+  color: rgb(31, 31, 71);
   margin: 0;
   padding: 0;
 }
 
 .contact-form p {
   font-size: 18px;
-  color: white;
+  color: rgb(54, 54, 97);
   margin: 0;
   padding: 0;
 }
@@ -44,49 +45,99 @@
 .row textarea {
   width: 100%;
   height: 50px;
-  border-radius: 12px;
-  background-color: rgb(68, 68, 68);
+  background-color: transparent;
   border: none;
+  border-bottom: 2px solid rgb(202, 202, 202);
   outline: none;
-  padding-left: 10px;
   font-family: inherit;
-  font-size: 15px;
-  box-shadow: 0px 0px 0px 0px rgb(255, 55, 55);
-  color: white;
+  font-size: 17px;
+  color: rgb(31, 31, 71);
   transition: box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.row label {
+  color: rgb(31, 31, 71);
+}
+
+.row-top,
+.row-middle,
+.row-bottom {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.budget-in {
+  position: absolute;
+  bottom: 16.5px;
+  right: 0;
+  color: rgb(31, 31, 71);
+}
+
+#word-counter {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .row textarea {
-  height: 200px;
+  height: 80px;
   resize: none;
+  padding-top: 15px;
 }
 
 .row #submit {
   font-size: 15px;
   font-family: inherit;
-  background-color: rgb(255, 55, 55);
+  background-color: rgb(54, 54, 97);
+  color: white;
   outline: none;
   border: none;
-  border-radius: 12px;
   padding: 10px 35px;
-  color: white;
   cursor: pointer;
-  box-shadow: 0px 0px 0px rgb(255, 55, 55);
-  transition: box-shadow 0.3s;
+  transition: background-color 0.3s;
 }
 
 .row #submit:hover {
-  box-shadow: 0px 0px 10px rgb(255, 55, 55);
-}
-
-.row-content input:focus,
-.row textarea:focus {
-  box-shadow: 0px 0px 0px 3px rgb(255, 55, 55);
+  background-color: rgb(92, 92, 161);
 }
 
 .row-content input::placeholder,
 .row textarea::placeholder {
-  color: rgb(214, 214, 214);
+  color: rgb(202, 202, 202);
+}
+
+.contact-form .underline {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+}
+
+.contact-form .underline-textarea {
+  bottom: 5px;
+}
+
+.contact-form .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: rgb(255, 0, 85);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+input:focus ~ .underline:before,
+textarea:focus ~ .underline:before {
+  transform: scaleX(1);
+}
+
+input:valid ~ .underline::before,
+textarea:valid ~ .underline:before {
+  transform: scaleX(1);
+  background: rgb(0, 255, 119);
 }
 
 .contact-information {
@@ -100,12 +151,21 @@
 .contact-information p {
   margin: 0;
   padding: 0;
-  color: white;
-  font-size: 17px;
+  color: rgb(54, 54, 97);
+  font-size: 19px;
+}
+
+.mail-to {
+  font-size: 19px !important;
+  color: rgb(255, 0, 85) !important;
+}
+
+.mail-to:hover {
+  text-decoration: underline;
 }
 
 .contact-information h1 {
-  color: rgb(255, 55, 55);
+  color: rgb(31, 31, 71);
   font-size: 30px;
   width: 50%;
   margin: 0;
@@ -114,13 +174,20 @@
 }
 
 .contact-information a {
-  color: white;
-  font-size: 17px;
+  color: rgb(54, 54, 97);
+  font-size: 30px;
   text-decoration: none;
   margin: 0;
   padding: 0;
+  transition: all 0.2s;
 }
 
 .contact-information a:hover {
-  text-decoration: underline;
+  color: rgb(255, 0, 85);
+}
+
+.contact::after {
+  display: table;
+  content: "";
+  clear: both;
 }

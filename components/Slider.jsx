@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './Slider.css'
 import Slide from './Slide.jsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 
 export default class Slider extends Component {
@@ -28,16 +31,18 @@ slideLeft() {
   
 renderNavigation() {
     return (
-        <div className="slider-arrows">
-            <div className="arrows">
-                <a className="arrow left" onClick={() => this.slideLeft()}>
-                    <img src={require('../img/left-arrow.png')} />
-                </a>
-            </div>
-            <div className="arrows">
-                <a className="arrow right" onClick={() => this.slideRight()}>
-                    <img src={require('../img/right-arrow.png')} />
-                </a>
+        <div className="container">
+            <div className="slider-arrows">
+                <div className="arrows">
+                    <a className="arrow left" onClick={() => this.slideLeft()}>
+                        <FontAwesomeIcon icon={faArrowLeft} />
+                    </a>
+                </div>
+                <div className="arrows">
+                    <a className="arrow right" onClick={() => this.slideRight()}>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                    </a>
+                </div>
             </div>
         </div>
 )

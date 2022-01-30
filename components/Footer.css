@@ -1,113 +1,141 @@
 .footer {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(13, 18, 39);
   color: white;
   position: relative;
   text-align: left;
   overflow-x: hidden;
 }
 
-.column {
-  display: inline-block;
-  vertical-align: middle;
-  min-height: 150px;
-  max-height: 150px;
-  padding: 10px 30px 10px 0px;
-  text-align: left;
+.footer hr {
+  border: 1px solid rgb(54, 54, 97);
 }
 
-.column h3 {
+.top-section {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.top-section h1 {
+  font-size: 45px;
+  margin: 0;
+}
+
+.top-section-text {
+  width: 30%;
+  float: left;
+}
+
+.top-section-text p {
   font-size: 20px;
-  color: #8a8a8a;
+  color: rgb(135, 135, 211);
+}
+
+.top-section-button {
+  float: right;
+}
+
+.top-section-button a {
+  color: white;
+  background-color: rgb(255, 0, 85);
+  border-radius: 0px;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0px 0px 0px rgb(255, 0, 85);
+  transition: box-shadow 0.3s;
+}
+
+.top-section-button a:hover {
+  box-shadow: 0px 0px 10px rgb(255, 0, 85);
+}
+
+.top-section::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.bottom-section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.column h1 {
+  font-size: 25px;
 }
 
 .column a {
-  color: rgb(204, 204, 204);
+  color: white;
   text-decoration: none;
-  font-size: 17px;
-  padding: 0;
-  margin: 0;
+  display: block;
+  margin-bottom: 20px;
   transition: all 0.2s;
+  width: fit-content;
 }
 
 .column a:hover {
-  color: rgb(255, 42, 42);
+  color: rgb(255, 0, 85);
 }
 
-.footer-content {
-  margin-left: 30px;
-  margin-right: 30px;
+.column-email {
+  color: rgb(255, 0, 85) !important;
 }
 
-.footer-content hr {
-  border: 1px solid rgb(63, 63, 63);
-  width: 100%;
-  box-sizing: border-box;
-  margin-top: 30px;
+.column-email:hover {
+  text-decoration: underline;
 }
 
-.footer-content p {
-  width: 600px;
-  padding: 10px 0px 20px 0px;
-  margin: 0;
-}
-
-.back-to-top {
-  float: right;
-  padding-right: 0px;
-  padding-top: 30px;
-}
-
-.back-to-top a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.2s;
-}
-
-.back-to-top a svg {
-  padding-right: 5px;
-  position: relative;
-  bottom: 0;
-  transition: all 0.2s;
-  color: white;
-}
-
-.back-to-top a:hover {
-  color: rgb(255, 42, 42);
-}
-
-.back-to-top a:hover svg {
-  color: rgb(255, 42, 42);
-  bottom: 3px;
-}
-
-.back-to-top::after {
-  clear: both;
-  content: "";
-  display: block;
+.policy {
+  display: unset !important;
+  color: rgb(77, 145, 223) !important;
 }
 
 @media (max-width: 768px) {
-  .column {
-    display: block;
+  .top-section {
     text-align: center;
-    padding-right: 0;
+    margin-bottom: 80px;
+    margin-top: 50px;
   }
 
-  .footer-content p {
-    width: 100%;
-    text-align: center;
+  .top-section h1 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .back-to-top {
+  .top-section-text {
     float: none;
     width: 100%;
+  }
+
+  .top-section-text p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .top-section-button {
+    float: none;
+    margin-top: 50px;
+  }
+
+  .bottom-section {
+    display: block;
     text-align: center;
+  }
+
+  .bottom-section a {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .column {
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: 770px) {
-  .back-to-top {
-    padding-right: 30px;
-  }
 }

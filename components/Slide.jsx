@@ -10,7 +10,8 @@ const Slider = ({image, width, height}) => {
       backgroundSize: 'cover',
       float: 'left',
       width: `${width}px`,
-      height: `${height}px`
+      height: `${height}px`,
+      marginRight: '20px'
     }
     return (
       <div className="slide" style={styles}></div>

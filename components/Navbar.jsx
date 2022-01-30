@@ -50,7 +50,7 @@ function Navbar(){
             }
             
             <div className={`${scrollState === "top" ? "navbar" : "navbar navbar-scrolled"}`}>
-                <div className="logo">
+                <div className="logo" onClick={() => window.location.href="/"}>
                     <img src={logo} alt="logo" />
                 </div>
                 <div className="links">
@@ -60,7 +60,7 @@ function Navbar(){
                     <Link to="/contact">CONTACT</Link>
                 </div>
                 <div className="signin">
-                    <a href=""><FontAwesomeIcon icon={faUser} /> SIGN IN</a>
+                    <a href="">SIGN IN</a>
                 </div>
                 <div className="phone-bars">
                     <FontAwesomeIcon icon={showMenu == true ? faTimes : faBars} onClick={handleSetMenu} />

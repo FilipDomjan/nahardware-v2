@@ -11,7 +11,7 @@ function Contact(){
     return(
         <>
             <Helmet>
-                <title>NorthAmerican Hardware | Contact Us</title>
+                <title>Contact | NorthAmerican Hardware</title>
             </Helmet>
             <ContactHero />
             <ContactForm />

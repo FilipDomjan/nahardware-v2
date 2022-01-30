@@ -12,9 +12,10 @@ function Videos(){
     return(
         <>
             <Helmet>
-                <title>NorthAmerican Hardware | Video Gallery</title>
+                <title>Videos | NorthAmerican Hardware</title>
             </Helmet>
-            <Error />
+            <VideosHero />
+            <VideoGallery />
         </>
     )
 }

@@ -19,17 +19,19 @@
 .arrows {
   display: inline-block;
   width: 50px;
+  margin-left: 30px;
 }
 
 .slider-arrows {
   float: right;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
-.slider-arrows img {
-  width: 30px;
-  position: relative;
-  top: 8px;
-  right: 2px;
+.slider-arrows svg {
+  padding: 0px 6px;
+  color: rgb(84, 84, 133);
+  transition: all 0.3s;
 }
 
 .slider-arrows > .arrow {
@@ -38,17 +40,18 @@
 
 .slider-arrows a {
   cursor: pointer;
-  background-color: rgb(100, 100, 100);
-  padding: 5px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
+  background-color: rgb(172, 184, 212);
+  padding: 20px 20px;
+  line-height: 100px;
   transition: all 0.3s;
 }
 
 .slider-arrows a:hover {
-  background-color: rgb(255, 59, 59);
+  background-color: rgb(84, 121, 202);
+}
+
+.slider-arrows a:hover svg {
+  color: white;
 }
 
 .arrows > .right img {

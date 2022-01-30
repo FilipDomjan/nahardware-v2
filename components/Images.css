@@ -7,7 +7,8 @@
 
 .builds p {
   font-size: 20px;
-  color: white;
+  color: rgb(31, 31, 71);
+  font-weight: bold;
 }
 
 .builds-container {
@@ -18,22 +19,23 @@
   width: 100%;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .builds-images img {
   width: 240px;
   height: 240px;
-  border-radius: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
   cursor: pointer;
   transform: scale(1);
-  transition: all 0.2s;
+  z-index: 0;
+  transition: all 0.4s;
+  transition-delay: 0.3s;
 }
 
 .builds-images img:hover {
-  transform: scale(1.02);
+  transform: scale(1.5);
   z-index: 9;
 }
 
@@ -45,7 +47,7 @@
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
   overflow: hidden;
 }
@@ -57,5 +59,4 @@
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  border-radius: 10px;
 }

@@ -17,37 +17,39 @@ function Sponsors(){
     return(
         <>
             <div className="sponsors">
-                <img src={triangle} />
                 <div className="container">
-                    <h1>OUR SPONSORS</h1>
-                    <p>We are proud to be backed by many companies. Our sponsors are a part of us and help us grow and achieve goals not possible otherwise.</p>
+                    <div className="right-description">
+                        <p class="section-name">SPONSORS</p>
+                        <h1>Our Sponsors</h1>
+                        <p>We are proud to be backed by many companies. Our sponsors are a part of us and help us grow and achieve goals not possible otherwise.</p>
+                    </div>
                     <div className="sponsor-list">
                         <div className="sponsor-item" onClick={() => window.open('https://shop.adata.com', "_blank")}>
-                            <Adata width="180px" height="180px" className="sponsor-filter" />
+                            <Adata className="sponsor-filter" />
                         </div>
                         <div className="sponsor-item" onClick={() => window.open('https://www.antec.com/', "_blank")}>
-                            <Antec width="180px" height="180px" className="sponsor-filter" />
+                            <Antec className="sponsor-filter" />
                         </div>
                         <div className="sponsor-item" onClick={() => window.open('https://www.amazon.com/stores/page/69C78C77-A2F8-43A6-896D-110418DF6D12', "_blank")}>
-                            <Arctic width="180px" height="180px" className="sponsor-filter-arctic" />
+                            <Arctic className="sponsor-filter" />
                         </div>
                         <div className="sponsor-item" onClick={() => window.open('https://www.bitfenix.com/', "_blank")}>
-                            <Bitfenix width="180px" height="180px" className="sponsor-filter" />
+                            <Bitfenix className="sponsor-filter" />
                         </div>
                         <div className="sponsor-item" onClick={() => window.open('https://darkflash.com/', "_blank")}>
-                            <Darkflash width="180px" height="180px" className="sponsor-filter" />
+                            <Darkflash className="sponsor-filter" />
                         </div>
                         <div className="sponsor-item" onClick={() => window.open('https://shop.xpg.com/', "_blank")}>
-                            <Xpg width="180px" height="180px" className="sponsor-filter" />
+                            <Xpg className="sponsor-filter" />
                         </div>
                         <div className="sponsor-item" onClick={() => window.open('https://www.teamgroupinc.com/en/', "_blank")}>
-                            <Tforce width="180px" height="180px" className="sponsor-filter" />
+                            <Tforce className="sponsor-filter" />
                         </div>
                         <div className="sponsor-item" onClick={() => window.open('http://www.v-color.net/', "_blank")}>
-                            <Vcolor width="180px" height="180px" className="sponsor-filter" />
+                            <Vcolor className="sponsor-filter" />
                         </div>
                         <div className="sponsor-item" onClick={() => window.open('https://www.silicon-power.com/web/gb/', "_blank")}>
-                            <Sp width="180px" height="180px" className="sponsor-filter" />
+                            <Sp className="sponsor-filter" />
                         </div>
                     </div>
                 </div>

@@ -1,26 +1,44 @@
 .hero {
   width: 100%;
   min-height: 400px;
-  background: linear-gradient(120deg, rgb(155, 34, 34) 5%, rgb(8, 8, 8) 55%);
+  background: rgb(187, 208, 255);
   padding-top: 20px;
   position: relative;
 }
 
 .hero-text {
-  width: 500px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  width: 1500px;
+  transform: translateY(50%);
+  text-align: left;
 }
 
-.hero-text h1 {
+.hero h1 {
   font-size: 50px;
-  color: white;
+  color: rgb(31, 31, 71);
+  margin: 0;
 }
 
-.hero-text p {
-  color: white;
+.hero p {
+  color: rgb(54, 54, 97);
   font-size: 20px;
+  padding: 10px;
+  padding-left: 0px;
+  margin: 0px;
+  width: 500px;
+}
+
+.page-name {
+  color: rgb(255, 0, 85) !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  margin: 0 !important;
+  margin-bottom: 0px !important;
+  padding: 10px !important;
+  padding-left: 0px !important;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    transform: translateY(100%);
+  }
 }

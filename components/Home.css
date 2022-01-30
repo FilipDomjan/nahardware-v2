@@ -11,8 +11,24 @@
     margin-right: auto;
   }
 
+  .buttons {
+    width: 1300px;
+  }
+
   .image-slider {
-    width: 1200px;
+    width: 1300px;
+  }
+
+  .sponsors .right-description {
+    width: 42%;
+  }
+
+  .sponsors .right-description p {
+    width: 80%;
+  }
+
+  .sponsor-list {
+    width: 55%;
   }
 }
 
@@ -24,32 +40,42 @@
   }
 
   .buttons {
-    width: 100%;
+    width: 1024px;
   }
 
-  .buttons h1 {
-    font-size: 8vw;
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
+  .our-services .item {
+    margin-bottom: 100px;
   }
 
-  .team-item {
-    width: 100%;
+  .about-us {
+    width: 45%;
   }
 
-  .image-slider {
-    width: 1000px;
+  .about-us p {
+    width: 80%;
   }
 
-  .item-content p {
-    width: 300px;
+  .stats-panel {
+    padding: 2px 50px 2px 35px;
+    bottom: 50px;
+  }
+
+  .image-slider .wrapper {
+    width: 1024px;
+  }
+
+  .sponsors .right-description p {
+    width: 80%;
   }
 }
 
 @media (max-width: 1024px) {
   .container {
     width: 768px;
+  }
+
+  .section-name {
+    width: 100%;
   }
 
   .navbar .links {
@@ -67,11 +93,18 @@
 
   .buttons {
     width: 100%;
+    text-align: center;
   }
 
   .buttons h1 {
-    font-size: 8vw;
+    font-size: 12vw;
     width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons p {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -81,62 +114,84 @@
     padding: 15px 35px;
   }
 
-  .who-are-we,
-  .meet-the-team {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .item p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .what-we-do {
+    float: none;
+    width: 100%;
+  }
+
+  .what-we-do p {
+    width: 100%;
+  }
+
+  .our-services {
+    width: 100%;
+    float: none;
+    margin-top: 100px;
+  }
+
+  .our-services .item {
+    width: 100%;
     display: block;
+  }
+
+  .who-are-we .left-panel {
+    float: none;
+    width: 100%;
+  }
+
+  .left-panel img {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .stats-panel {
+    position: unset;
+    box-shadow: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-us {
+    width: 100%;
     float: none;
     text-align: center;
-    width: 100%;
-  }
-  .who-are-we p {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    box-sizing: border-box;
+    margin-top: 0px;
   }
 
-  .who-are-we h1 {
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .meet-the-team h2 {
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-
-  .team-item {
-    text-align: center;
-  }
-
-  .item-content {
-    display: block;
-    text-align: center;
-    margin-right: 0;
-  }
-
-  .item-content h3 {
-    width: 100%;
-  }
-
-  .item-content p {
-    width: 100%;
-    padding: 0px 10px;
-    box-sizing: border-box;
+  .about-us p {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .sponsors p {
+  .about-us h1 {
     width: 100%;
-    padding: 0px 10px;
-    box-sizing: border-box;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  }
+
+  .why-us {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .why-us p {
+    width: 100%;
+  }
+
+  .sponsors {
+    margin-top: 50px;
+    text-align: center;
   }
 
   .sponsor-list {
@@ -144,23 +199,26 @@
   }
 
   .sponsor-item {
-    width: 20%;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 32.5%;
+    height: 200px;
+    margin: 0;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0;
   }
 
-  .sponsor-item svg {
-    width: 100%;
+  .sponsor-filter {
+    width: 50% !important;
   }
 
-  .why-us h1 {
-    width: 100%;
+  .right-description {
+    width: 100% !important;
+    text-align: center;
+    margin-top: 0px;
   }
 
-  .why-us p {
-    width: 100%;
-    padding: 0px 10px;
-    box-sizing: border-box;
+  .right-description p {
+    margin-bottom: 50px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -178,6 +236,10 @@
     box-sizing: border-box;
   }
 
+  .section-name {
+    width: 100%;
+  }
+
   .navbar .links {
     display: none;
   }
@@ -193,11 +255,17 @@
 
   .buttons {
     width: 100%;
+    text-align: center;
   }
 
   .buttons h1 {
-    font-size: 12vw;
     width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons p {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -207,84 +275,112 @@
     padding: 15px 35px;
   }
 
-  .who-are-we,
-  .meet-the-team {
-    display: block;
-    float: none;
+  .services {
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
-    width: 100%;
-  }
-  .who-are-we p {
-    width: 100%;
-    text-align: center;
-    padding: 0px 10px;
-    box-sizing: border-box;
   }
 
-  .who-are-we h1 {
-    width: 350px;
+  .item p {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .meet-the-team h2 {
-    margin-top: 70px;
-    margin-bottom: 50px;
+  .what-we-do {
+    float: none;
+    width: 100%;
   }
 
-  .team-item {
-    text-align: center;
+  .what-we-do p {
+    width: 100%;
   }
 
-  .item-content {
+  .our-services {
+    width: 100%;
+    float: none;
+    margin-top: 100px;
+  }
+
+  .our-services .item {
+    width: 100%;
     display: block;
+  }
+
+  .who-are-we .left-panel {
+    float: none;
+    width: 100%;
+  }
+
+  .left-panel img {
+    width: 100%;
+  }
+
+  .stats-panel {
+    position: unset;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .about-us {
+    width: 100%;
+    float: none;
     text-align: center;
-    margin-right: 0;
+    margin-top: 0px;
   }
 
-  .item-content h3 {
+  .about-us h1 {
     width: 100%;
   }
 
-  .item-content p {
-    width: 100%;
-    padding: 0px 10px;
-    box-sizing: border-box;
+  .why-us {
+    margin-top: 10px;
+    text-align: center;
   }
 
-  .sponsors p {
-    width: 100%;
-    padding: 0px 10px;
-    box-sizing: border-box;
+  .sponsors {
+    margin-top: 50px;
   }
 
-  .sponsor-list {
+  .sponsors .right-description {
     width: 100%;
   }
 
   .sponsor-item {
-    width: 30%;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 48%;
+    height: 130px;
+    margin: 0;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0;
   }
 
-  .sponsor-item svg {
+  .sponsor-filter {
+    width: 60% !important;
+  }
+
+  .right-description {
     width: 100%;
+    text-align: center;
+    margin-top: 0px;
   }
 
-  .why-us h1 {
-    width: 300px;
+  .right-description p {
+    margin-bottom: 50px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+}
 
-  .why-us p {
-    width: 100%;
-    padding: 0px 10px;
-    box-sizing: border-box;
+@media (max-height: 600px) {
+  .showcase {
+    height: 800px !important;
   }
+}
 
-  .image-slider {
-    display: none;
+@media (min-width: 2400px) {
+  .left-panel {
+    float: right;
   }
 }

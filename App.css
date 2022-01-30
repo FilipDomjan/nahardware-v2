@@ -3,17 +3,31 @@
   src: url("../fonts/Poppins/Poppins-Regular.ttf");
 }
 
+@font-face {
+  font-family: TT Chocolates DemiBold;
+  src: url("../fonts/TT_Chocolates/TT\ Chocolates\ DemiBold.otf");
+}
+
+@font-face {
+  font-family: TT Chocolates;
+  src: url("../fonts/TT_Chocolates/TT\ Chocolates\ Regular.otf");
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Poppins";
+  font-family: "TT Chocolates DemiBold";
   height: 100%;
-  background-color: rgb(14, 14, 14);
 }
 
 .buttons h1 {
   color: red;
+}
+
+body p,
+body a {
+  font-family: "TT Chocolates" !important;
 }
 
 @media (max-width: 500px) {
@@ -31,16 +45,16 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background: rgb(31, 31, 71);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(77, 77, 77);
+  background: rgb(54, 54, 97);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(114, 114, 114);
+  background: rgb(63, 63, 143);
 }

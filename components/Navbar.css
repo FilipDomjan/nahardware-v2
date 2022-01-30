@@ -27,7 +27,7 @@
 
 .navbar-scrolled {
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(31, 31, 71, 0.4);
 }
 
 .logo {
@@ -36,6 +36,7 @@
   float: left;
   margin-left: 10px;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .logo img {
@@ -51,6 +52,9 @@
 .signin a {
   color: white;
   text-decoration: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px 20px;
 }
 
 .links {

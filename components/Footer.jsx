@@ -1,36 +1,51 @@
 import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Footer(){
     return(
         <>
             <div className="footer">
-                <div class="back-to-top">
-                    <a href="#"><FontAwesomeIcon icon={faArrowUp} />Back to top</a>
-                </div>
-                <div className="footer-content">
-                    <div className="column">
-                        <h3>Links</h3>
-                        <a href="">Home</a>
-                        <br />
-                        <a href="">Projects</a>
-                        <br />
-                        <a href="">Videos</a>
-                        <br />
-                        <a href="">Contact</a>
-                    </div>
-                    <div class="column">
-                        <h3>Legal Documents</h3>
-                        <a href="">Terms of service</a>
-                        <br />
-                        <a href="">Privacy policy</a>
-                        <br />
-                        <a href="">Cookies policy</a>
+                <div className="container">
+                    <div className="top-section">
+                        <h1>Get In Touch With Us!</h1>
+                        <div className="top-section-text">
+                            <p>There are many reasons why you should work with us and why we should be your first choice of pc builders.</p>
+                        </div>
+                        <div className="top-section-button">
+                            <Link to="/contact">WORK WITH US</Link>
+                        </div>
                     </div>
                     <hr />
-                    <p>&copy; NorthAmerican Hardware · 2021 - 2022. All rights reserved.</p>
+                    <div className="bottom-section">
+                        <div className="column">
+                            <h1>NorthAmerican Hardware</h1>
+                            <p>Toronto, CA</p>
+                            <p>Canada, North America</p>
+                            <a href="mailto:info@nahardware.com" class="column-email">info@nahardware.com</a>
+                            <p>&copy; NorthAmerican Hardware 2022.<br />All rights reserved <Link to="/" className='policy'>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Policies</Link></p>
+                        </div>
+                        <div className="column">
+                            <h1>Web Links</h1>
+                            <Link to="/">Home</Link>
+                            <Link to="/projects">Projects</Link>
+                            <Link to="/videos">Videos</Link>
+                            <Link to="/contact">Contact</Link>
+                        </div>
+                        <div className="column">
+                            <h1>Technologies</h1>
+                            <a href="https://reactjs.org" target="_blank">React.js</a>
+                            <Link to="/">HTML</Link>
+                            <Link to="/">CSS</Link>
+                            <a href="https://www.javascript.com" target="_blank">JavaScript</a>
+                        </div>
+                        <div className="column">
+                            <h1>Social Media</h1>
+                            <a href="https://www.instagram.com/na.hardware/" target="_blank">Instagram</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

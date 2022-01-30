@@ -1,0 +1,81 @@
+.services {
+  width: 100%;
+  height: 100%;
+  padding: 150px 0px;
+}
+
+.section-name {
+  color: rgb(255, 0, 85) !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  margin: 0;
+  margin-bottom: 20px !important;
+}
+
+.what-we-do {
+  width: 50%;
+  float: left;
+}
+
+.what-we-do h1 {
+  color: rgb(31, 31, 71);
+  font-size: 45px;
+  margin: 0;
+}
+
+.what-we-do p {
+  width: 65%;
+  color: rgb(54, 54, 97);
+  font-size: 24px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.what-we-do a {
+  color: white;
+  background-color: rgb(255, 0, 85);
+  border-radius: 0px;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0px 0px 0px rgb(255, 0, 85);
+  transition: box-shadow 0.3s;
+}
+
+.what-we-do a:hover {
+  box-shadow: 0px 0px 10px rgb(255, 0, 85);
+}
+
+.our-services {
+  width: 49%;
+  float: left;
+}
+
+.our-services .item {
+  width: 42%;
+  height: 250px;
+  float: left;
+  vertical-align: top;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.our-services .item h1 {
+  color: rgb(31, 31, 71);
+  font-size: 26px;
+}
+
+.our-services .item p {
+  color: rgb(54, 54, 97);
+  font-size: 20px;
+}
+
+.our-services .item img {
+  width: 50px;
+  height: 50px;
+}
+.services::after {
+  display: table;
+  content: "";
+  clear: both;
+}
